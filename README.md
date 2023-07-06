@@ -1,2 +1,7 @@
-# K-means-of-the-picture
-The users push a picture to the HTML and it will be calculated to K-means( the K is determined by users) and show the result visable with the piechart and barcharrt
+# README
+## 网页功能
+本网页实现了由用户上传一张图片以及一个整数k，自动返回对其像素的聚类结果，并且以条形图和饼状图的形式将其可视化，在可视化的部分，我将每一个聚类的颜色设为了这个类的中心点的颜色，使整个图片色调与原图片一致，比较美观。
+## 具体实现
+K聚类部分主要是三个函数：分类、更新和初始化。初始化即随机选择k个点，随后按照点与点之间的欧氏距离对其进行分类，最后将类中心更新到所有归入该类的点的中心去。我设置了20次的迭代次数，在k值不太大（<10）的情况下，网页响应时间是比较短的。<br>
+## 后续工作
+后续需要进行的工作可能是在网页UI方向上，排版相对比较简单粗糙。同时也希望实现将图片中每个像素点替换为聚类像素点，重新组成图片进行展示的功能。还在更新中。
